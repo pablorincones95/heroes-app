@@ -1,5 +1,5 @@
 import { heroes } from "../data/heroes";
-import type { Hero } from "../data/heroes";
+import type { Hero } from "../data/heroes.d";
 
 export const getHeroesByPublishers = (publisher: "DC Comics" | "Marvel Comics"): Hero[] => {
   const validPublishers = ["DC Comics", "Marvel Comics"] as const;

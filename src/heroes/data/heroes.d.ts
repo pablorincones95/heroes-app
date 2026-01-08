@@ -1,6 +1,6 @@
 // Definición de tipos para el archivo heroes.js
 
-interface Hero {
+export interface Hero {
   id: string;
   superhero: string;
   publisher: "DC Comics" | "Marvel Comics";
@@ -11,4 +11,4 @@ interface Hero {
 
 declare const heroes: Hero[];
 
-export { heroes, Hero };
+export { heroes };

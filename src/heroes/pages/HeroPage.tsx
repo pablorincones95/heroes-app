@@ -5,7 +5,7 @@ import { getHeroById } from "../helpers/getHeroById";
 export const HeroPage = () => {
   const { heroId } = useParams();
 
-  const hero = useMemo(() => getHeroById(heroId!), [heroId]);
+  const hero = useMemo(() => getHeroById(heroId), [heroId]);
 
   const navigate = useNavigate();
 

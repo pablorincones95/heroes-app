@@ -8,7 +8,7 @@ export const LoginPage = () => {
 
   const handleLogin = () => {
     login("Pablo");
-    navigate("/heroes", {
+    navigate("/", {
       replace: true,
     });
   };

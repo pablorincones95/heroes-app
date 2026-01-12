@@ -5,15 +5,21 @@ export const types = {
 
 export interface State {
   logged: boolean;
-  name: string;
+  user: {
+    id: number;
+    name: string;
+  } | null;
 }
 
 export const initialState: State = {
   logged: false,
-  name: "",
+  user: null,
 };
 
 export interface Action {
   type: string;
-  payload?: any;
+  payload?: {
+    id: number;
+    name: string;
+  };
 }

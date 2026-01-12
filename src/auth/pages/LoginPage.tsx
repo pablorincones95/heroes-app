@@ -4,10 +4,10 @@ import { AuthContext } from "../context/AuthContext";
 
 export const LoginPage = () => {
   const navigate = useNavigate();
-  const { dispatch } = useContext(AuthContext)!;
+  const { login } = useContext(AuthContext)!;
 
   const handleLogin = () => {
-    dispatch({ type: "[Auth] Login", payload: "Pablo" });
+    login("Pablo");
     navigate("/heroes", {
       replace: true,
     });

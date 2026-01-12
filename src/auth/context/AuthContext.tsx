@@ -1,8 +1,10 @@
 import { createContext } from "react";
 import type { State } from "./authTypes";
 
-interface AuthContextProps extends State {
-  dispatch: React.Dispatch<any>;
+interface AuthContextProps {
+  state: State;
+  login: (name: string) => void;
+  logout: () => void;
 }
 
 export const AuthContext = createContext<AuthContextProps | undefined>(
